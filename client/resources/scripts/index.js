@@ -17,6 +17,7 @@ function handleOnChange()
     populateForm();
 }
  
+// THESE ARE FOR CLICKING ON THE BUTTONS
 function handleEditClick()
 {
     makeEditable();

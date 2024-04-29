@@ -3,6 +3,7 @@ const baseUrl = "https://pa6-backend.herokuapp.com/api/books/"+cwid;
 var bookList = [];
 var myBook = {};
 
+// so this populates the list of books for the website!
 function populateList(){
 
     const allBooksApiUrl = baseUrl;
@@ -20,6 +21,7 @@ function populateList(){
         console.log(error);
     });
 }
+
 
 function putBook(id){
     const putBookApiUrl = baseUrl + "/"+id;
@@ -47,6 +49,8 @@ function putBook(id){
         populateForm();
     });
 }
+
+// posts the book 
 
 function postBook(){
     const postBookApiUrl = baseUrl;
